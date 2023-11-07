@@ -21,11 +21,11 @@ public class TestListExamples {
 
   @Test(timeout = 500)
   public void testFilter() {
-    List<String> input1 = Arrays.asList("wow", "okay", "cool", "ah", "moon");
+    List<String> input1 = Arrays.asList("wow", "okay", "cool", "ah", "moon", "Moon");
     IsMoon sc = new IsMoon();
     List<String> output1 = ListExamples.filter(input1, sc);
     assertEquals(
-      Arrays.asList(new String[] { "moon" }),
+      Arrays.asList(new String[] { "moon", "Moon" }),
       output1
     );
   }
