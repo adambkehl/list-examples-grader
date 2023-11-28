@@ -36,7 +36,7 @@ public class TestListExamples {
     List<String> input2 = Arrays.asList("a", "b", "e", "j");
     IsMoon sc = new IsMoon();
     List<String> output1 = ListExamples.merge(input1, input2);
-    assertSame(
+    assertEquals(
       Arrays.asList(new String[] { "a", "b", "c", "e", "e", "f", "g", "j" }),
       output1
     );
